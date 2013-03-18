@@ -28,9 +28,9 @@ Steps to reproduce:
 ```
 ## Note:
 
-   1. This only occur when we passing parameters with content_ids.
+   1. The problem only occur when we passing parameters with *content_ids*.
    
-   2. validation is running when we assinging parameter hash using attributes=.(the document says validation doesn't trigger while assigning attributes to the object using attributes=)
+   2. Validation is running when we assinging parameter using attributes=.( But the document says validation doesn't trigger while assigning attributes to the object using attributes=)
    
    for example:
 
