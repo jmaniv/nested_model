@@ -1,11 +1,13 @@
 
 <%= form_for @document do |f| %>
-   	<%= f.error_messages %>
-   	<div><%= f.text_field :name %></div>
+      <%= f.error_messages %>
+   	<div><%= f.label :name, "Document Name" %> &nbsp;&nbsp;&nbsp;<%= f.text_field :name %></div>
    	
    	<%= f.fields_for :sections do |builder| %> 
-   		<div><%= builder.text_field :name %></div>
-   		<div><%= builder.select :content_ids, Content.all.collect {|p| [ p.name, p.id ] },{:prompt => "Please Select"}, {:class => "nhs_select", :multiple => true}  %></div>
+   		<div><%= f.label :name, "Section Name" %>&nbsp;&nbsp;&nbsp;<%= builder.text_field :name %></div>
+   		<div>
+   			<%= f.label :content_ids, "Select Content" %>&nbsp;&nbsp;&nbsp;
+   			<%= builder.select :content_ids, Content.all.collect {|p| [ p.name, p.id ] },{:prompt => "Please Select"}, {:class => "nhs_select", :multiple => true}  %></div>
    <% end %>
    <%= f.submit :submit%>
 <% end %>
