@@ -27,11 +27,12 @@ Steps to reproduce:
 3. Click on submit(goes to update action)
 ```
 note:
-   This only occur when we passing parameters with content_ids.
+
+   1. This only occur when we passing parameters with content_ids.
    
-   validation is running when we assinging parameter hash using attributes=.(the document says validation doesn't trigger while assigning attributes to the object using attributes=)
+   2. validation is running when we assinging parameter hash using attributes=.(the document says validation doesn't trigger while assigning attributes to the object using attributes=)
    
-   for example
+   for example:
 
 ```
 params = {"document"=>{"name"=>"sadfds", "sections_attributes"=>{"0"=>{"name"=>"", "content_ids"=>["1", "2"]}}}}
