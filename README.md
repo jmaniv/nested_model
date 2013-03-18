@@ -28,7 +28,9 @@ Steps to reproduce:
 ```
 note:
    This only occur when we passing parameters with content_ids.
+   
    validation is running when we assinging parameter hash using attributes=.(the document says validation doesn't trigger while assigning attributes to the object using attributes=)
+   
    for example
 
 ```
