@@ -3,7 +3,7 @@ On submitting new form second time action goes to update method
 
 Sample Rails project for issue https://github.com/rails/rails/issues/9746
 
-## Installation
+Installation
 
 Install the gems:
 
@@ -26,7 +26,7 @@ Steps to reproduce:
 2. Input the form fields and submit(after submit the form render with validation error message for user_id in paragraph model and now the form has primary id)
 3. Click on submit(goes to update action)
 ```
-note:
+## Note:
 
    1. This only occur when we passing parameters with content_ids.
    
