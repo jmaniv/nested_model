@@ -23,7 +23,7 @@ Steps to reproduce:
 
 ```
 1. Go to new document form by clicking "New Document" link.
-2. Input the form fields(fields are mandatory to test) and submit(after submit the form render with validation error message for user_id in paragraph model and now the form has primary id)
+2. Input the form fields(fields are mandatory to test) and submit(after submit the form, it render with validation error message for user_id in paragraph model and now the form has primary id)
 3. Click on submit(goes to update action)
 ```
 ## Note:
