@@ -1,6 +1,5 @@
-
 <%= form_for @document do |f| %>
-   	<%= f.error_messages %>
+      <%= f.error_messages %>
    	<div><%= f.label :name, "Document Name" %> &nbsp;&nbsp;&nbsp;<%= f.text_field :name %></div>
    	
    	<%= f.fields_for :sections do |builder| %> 
